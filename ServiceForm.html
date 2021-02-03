@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="./css/index.css" type="text/css">
+        <link rel="icon" href="./imgs/p1.jpg" type="img/jpg">
+        <link href='https://fonts.googleapis.com/css?family=Chilanka' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="./js/jquery-3.5.1.js"></script>
+        <script src="./js/scripts.js"></script>
+        <title>LaNoshery</title> 
+    </head>
+    <body>
+           <div class="jumbotron">
+               <div class="row order">
+                   <div class="col-md-6">
+                       <div class="col-md-8">
+                        <h3>Enter your cleaning request serivce details here <br> </h3>
+                        <form id="order-info">
+                            <label>Choose your service</label>
+                            <select class="form-control" name="size" id="size">
+                                <option value="8000">Full house cleaning 8000 Rwf</option>
+                                <option value="5000">Laundry 5000 Rwf</option>
+                                <option value="45000">Partial cleaning 4500 Rwf</option>
+                            </select>
+                            <br>
+                            <label>Choose your most cleaning materials </label>
+                            <select class="form-control" name="" id="materials">
+                            <option value="500" name="materials">Glasses 500 Rwf
+                            <option value="400" name="materials">Tile 400 Rwf
+                            <option value="1000" name="materials">Texture 1000 Rwf
+                            </select> 
+                            <br>
+                            <label>Choose your Task</label> <br>
+                            <input value="300" type="checkbox" id="clean">cleaning
+                            <input value="300" type="checkbox" id="laundry">Laundry
+                            <br> <br>
+                            <label for="">  <nav>Number of prefferable workers</nav></label>
+                            <input class="form-control form-group" type="text" id="numberofcleaners">
+                            <label for="name">Name</label>
+                            <input class="form-control" type="text" name="" id="name" required="required">
+                            <label for="location">Location</label>
+                            <input class="form-control" type="text" id="location" placeholder="Ex: Kanombe">
+                            <label for="phonenumber">Phone Number</label>
+                            <input class="form-control" type="tel" placeholder="07......" id="number" required> <br>
+                            <button name="button" type="submit" id="submit" value="Check-Out"
+                                onclick="calctotalPrice()">Checkout</button>
+                                <form onsubmit="return clearInput()">
+                                    <input class="clear" type="submit" value="Clear input">
+                                </form>
+                        </form>
+                       </div>
+                   </div>
+               </div>
+           </div> 
+           <!--------------------------footer section------------------------------>
+            <footer class="text-center">
+                <h4>Contact us</h4>
+                <p><i class="fa fa-map-marker fa-2x">&nbsp;Nyarugenge</i></p>
+                <p><i class="fa fa-phone">&nbsp;+250788888888</i></p>
+                <p><i class="fa fa-email">&nbsp;KFMClenningLtd@gmail.com</i></p>
+            </footer>
+        </div>
+    </body>
+</html>
