@@ -50,9 +50,15 @@ textarea[type=text] {
      color:black;
      
  }
-.submit{
-    padding-top: 30px;
-    padding-bottom: 50px;
+button{
+    padding-top: 10px;
+    padding-bottom: 30px;
     text-align: center;
-    
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100px;
+    height: 10px;
+    margin-left: 700px;
+    margin-top: 10px;
 }
