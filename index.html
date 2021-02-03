@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Robot">
+<link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/4d99540586.js" crossorigin="anonymous"></script>
+<script src="./js/jquery-3.5.1.js"></script>
+<script src="./js/scripts.js"></script>
+ </head>
+<body>
+    <div id="Home">
+<div class="header">
+  
+</div>
+</div>
+
+<div class="navbar">
+<a href="#Home">Home</a>
+<a href="#About">About Us</a> 
+<a href="#Services">Contsct Us</a>
+<a href="#Contact">Contsct Us</a>
+</div>
+<div class="row">
+  <div class="side">
+      <div id="About">
+        <div class="jumbotron">
+            <div class="row order">
+                <div class="col-md-6">
+                    <div class="col-md-8">
+                     <h3>Enter your service request details<br> </h3>
+                     <form id="order-info">
+                         <label>Choose service </label>
+                         <select class="form-control" name="size" id="size">
+                             <option value="7">Cleaning house </option>
+                             <option value="5">Laundry </option>
+                             <option value="4">Cleaning dishes </option>
+                         </select>
+                         <br>
+                         <label>Choose what you want to be cleaned</label>
+                         <select class="form-control" name="" id="crust">
+                         <option value="1" name="crust">Living Room
+                         <option value="1" name="crust"> Cloths 
+                         <option value="2" name="crust">The whole house
+                         </select> 
+                         <br>
+                         <label>Choose your Desired service ($1/each)</label> <br>
+                         <input value="1" type="checkbox" id="mush">Cleaning
+                         <input value="1" type="checkbox" id="onion">Laundry
+                         <br> <br>
+                         <label for="">Input Quantity</label>
+                         <input class="form-control form-group" type="text" id="numberofpizza">
+                         <button name="button" type="submit" id="submit" value="Check-Out"
+                             onclick="calctotalPrice()">Checkout</button>
+                             <form onsubmit="return clearInput()">
+                                 <input class="clear" type="submit" value="Clear input">
+                             </form>
+                     </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="col-md-8">
+                     <button type="submit" name="button" id="delivery">Click for delivery</button>
+                         <div id="deliveryForm">
+                             <h3>Enter delivery info:</h3>
+                             <form id="delivery-info">
+                                 <label for="name">Name</label>
+                                 <input class="form-control" type="text" name="" id="name" required="required">
+                                 <label for="location">Location</label>
+                                 <input class="form-control" type="text" id="location" placeholder="Ex: Kanombe">
+                                 <label for="phonenumber">Phone Number</label>
+                                 <input class="form-control" type="tel" placeholder="07......" id="number"> <br>
+                                 <button type="submit" name="button" id="submit">Make delivery</button>
+                                 <button type="submit" name="button" id="cancel">Cancel delivery</button>
+                             </form>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+           </div> 
+    </div>
+    </div>
+</div>
+<div id="Services">
+
+</div>
+   <div id="Contact">
+<div class="footer">
+    
+</div>
+</div> 
+</body>
+</html>

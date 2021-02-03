@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family:Roboto;
+    margin: 0;
+  }
+  
+  .header {
+    padding: 80px;
+    text-align: center;
+    background-image:url('Images/hm.jpg');
+    color:black;
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header h1 {
+    font-size: 40px;
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align:center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  .navbar a:hover {
+    color: black;
+  }
+  .navbar a.active {
+    background-color: #666;
+    color: white;
+  }
+  .row {  
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+  }
+  
+  .side {
+    -ms-flex: 30%;
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  .main {   
+    -ms-flex: 70%; 
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: black;
+    text-align: center;}
+    img{
+  width: 20%;
+  height:20%;
+  
+  }
+  .body{
+  height: 180px;
+  width: 300px;
+  }
+  .flex-container {
+  
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-between;
+   
+  }
+  
+  .flex-container > img {
+    background-color: #f1f1f1;
+    width: 40%px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  .jumbotron{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/background.jpeg");
+    background-size: cover;
+    margin-top: 50px;
+    width:900px;
+    margin-left: 100px;
+    color:white;
+}
+#submit, .clear, #delivery, #cancel{
+    background-color: rgb(151, 222, 243);
+    border-radius: 5px;
+}
+#deliveryForm{
+    display: none;
+  #responsive {
+    width: 20%;
+    height: auto;
+    
+  
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+  
