@@ -3,7 +3,30 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    font-size: 20px;
+    padding-left: 400px;
+   
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align:center;
+    padding-left: 20px;
+    padding-right: 90px;
+    text-decoration: none;
+    
+  }
+  .navbar a:hover {
+    color: rgb(84, 181, 219);
+  }
+  
 h1{
     text-align: center;
     margin-top: 200px;
@@ -17,7 +40,7 @@ h2{
 .contactUs{
    
     text-align:center;
-    padding-top: 50px;
+    padding-top: 20px;
     
 }
 input[type=text]{
@@ -61,4 +84,14 @@ button{
     height: 10px;
     margin-left: 700px;
     margin-top: 10px;
+    margin-bottom: 200px;
+}
+footer{
+    padding-top:20px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    position: -webkit-sticky;
+    color: black;
+    text-align: center;
 }
