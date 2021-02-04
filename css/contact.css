@@ -1,0 +1,97 @@
+body{
+    background-image: url("../Images/photo-1582735689369-4fe89db7114c.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    font-size: 20px;
+    padding-left: 450px;
+   
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align:center;
+    padding-left: 20px;
+    padding-right: 90px;
+    text-decoration: none;
+    
+  }
+  .navbar a:hover {
+    color: rgb(84, 181, 219);
+  }
+  
+h1{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 60px;
+}
+
+h2{
+    text-align: center;
+    font-style: italic;
+}
+.contactUs{
+   
+    text-align:center;
+    padding-top: 20px;
+    
+}
+input[type=text]{
+    background-color: white;
+    width: 500px;
+    height: 40px;
+    margin-left:510px;
+
+    color: black;
+
+}
+input::placeholder{
+    color: black;
+    
+}
+#name-input{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+textarea[type=text] {
+    background-color: white;
+    width: 500px;
+    height: 280px;
+    margin-left: 10px;
+    margin-top: 30px;
+    color: black;
+ 
+ }
+ textarea::placeholder{
+     color:black;
+     
+ }
+button{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100px;
+    height: 10px;
+    margin-left: 700px;
+    margin-top: 10px;
+    margin-bottom: 200px;
+}
+footer{
+    padding-top:20px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    position: -webkit-sticky;
+    color: black;
+    text-align: center;
+}
