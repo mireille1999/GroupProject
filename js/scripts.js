@@ -12,12 +12,12 @@ function getNumber() {
     return parseInt(selectedNumber);
 }
 function cleaning() {
-    var mushroom = 0;
-    var addMushroom = document.getElementById("clean",);
-    if (addMushroom.checked === true) {
-        mushroom = 300;
+    var cleaning = 0;
+    var addCleaning = document.getElementById("clean",);
+    if (addCleaning.checked === true) {
+        cleaning = 300;
     }
-    return parseInt(mushroom);
+    return parseInt(cleaning);
 }
 
 function calctotalPrice(e) {
