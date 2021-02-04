@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="css/contact.css">
 <script src="https://kit.fontawesome.com/4d99540586.js" crossorigin="anonymous"></script>
 <script src="./js/jquery-3.5.1.js"></script>
-<script src="./js/scripts.js"></script>
+
  </head>
  <body>
        <div class="navbar">
@@ -22,19 +22,23 @@
             <h1 id="contact">CONTACT US</h1>
             <h2>Get in touch with us!</h2>
             <form action="https://gmail.us4.list-manage.com/subscribe/post?u=c40818488e702cd7135824a2b&amp;id=9e32737afc" method="post" id="mc-embedded-subscribe-form contact" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div class="row" id="contactUs-input">
-                    <div class="col-md-6">
+                <div class="row" id="name-input">
+                    <div class="col-md-12">
                         <div class="form-group">
                             <label for="name"></label>
                             <input type="text" name="FullName" class="required" id="fname" placeholder="Name...">
                         </div>
                     </div>
-                    <div class="col-md-6">
+                </div>
+                <div class="row" id="email-input">
+                    <div class="col-md-12">
                         <div class="form-group">
                             <label for="email"></label>
                             <input type="text" name="Email" class="required" id="email" placeholder="Email...">
                         </div>
                     </div>
+                </div>
+                <div class="row" id="message-input"></div>    
                     <div class="col-md-12">
                         <div class="form-group">
                             <label for="message"></label>
@@ -45,11 +49,19 @@
 
                 </div>
                 <div class="submit">
-                    <input type="submit" value="Submit" class="button">
+                    <button id="submit" class="btn btn-primary my-4">Submit</button>
                 </div>
             </form>
             
         </div>
+        <div id="Contact">
+            <footer class="text-center">
+                <p><i class="fa fa-map-marker fa-2x">&nbsp;Nyarugenge</i></p>
+                <p><i class="fa fa-phone">&nbsp;+250788888888</i></p>
+                <p><i class="fa fa-email">&nbsp;KFMClenningLtd@gmail.com</i></p>
+            </footer>
+        </div>
+        <script src="./js/scripts.js"></script>
 
  </body>
 </html>
