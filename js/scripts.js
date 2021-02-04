@@ -1,63 +1,11 @@
-
-function getSizeCost() {
-    var selectedSize = document.getElementById("size").value;
-    return parseInt(selectedSize);
-}
-function getCrustCost() {
-    var selectedCrust = document.getElementById("crust").value;
-    return parseInt(selectedCrust);
-}
-function getNumber() {
-    var selectedNumber = document.getElementById("numberofpizza").value;
-    return parseInt(selectedNumber);
-}
-function mushrooms() {
-    var mushroom = 0;
-    var addMushroom = document.getElementById("mush",);
-    if (addMushroom.checked === true) {
-        mushroom = 1;
+$('.submit').click(function () {
+    var Name = $('#fname').val();
+    var Email = $('#email').val();
+    var Message = $('message');
+    var key ='c8fbd9a0cf3958e02be2822e55cfbfc5-us4';
+    if (Name == '' || Email == '' || Message == '') {
+        alert('Please fill in the missing information!');
+    } else {
+        alert(' Hello ' + Name + ', we have received your message. Thank you for reaching out to us.');
     }
-    return parseInt(mushroom);
-}
-function calctotalPrice(e) {
-    event.preventDefault();
-    var totalPrice = (getSizeCost() + getCrustCost() + mushrooms()) * (getNumber());
-    
-        console.log(totalPrice);
-
-    alert("Your resquest of cleaning  " + getNumber() + "  has been processed.Your total amount payable is " + totalPrice +"     Rwf." )
-}
-$(document).ready(function(){
-    $("#delivery").click(function(){
-        $("#delivery").toggle(1000);
-        $("#deliveryForm").toggle(1200);
-        $("#cancel").slideDown(1000);
-    });
-    $("#cancel").click(function(){
-        $("#cancel").slideUp(1000);
-        $("#deliveryForm").slideUp(1200);
-        alert("The delivery is  cancelled.");
-        $("#delivery").slideDown(1200);
-    });
-});
-$(document).ready(function(){
-    $("#deli").click(function(){
-        $("#deli").toggle(1000);
-        $("#mimi").toggle(1200);
-        $("#cancel").slideDown(1000);
-    });
-    $("#cancel").click(function(){
-        $("#cancel").slideUp(1000);
-        $("#deli").slideUp(1200);
-        alert("The delivery is  cancelled.");
-        $("#deli").slideDown(1200);
-    });
-});
-$(document).ready(function () {
-    $("#delivery-info").submit(function () {
-        var name = $("input#name").val();
-        var number = $("input#number").val();
-        var location = $("input#location").val();
-        alert("Hello " + name + ". Thank you for chosing Mimi's Pizzeria . Your order has been successfully received and will be delivered to " +  location + ".The delivery will cost 1 $. We will call you shortly on " + number);
-    }); 
 });
