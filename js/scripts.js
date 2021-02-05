@@ -1,4 +1,3 @@
-
 $('.submit').click(function () {
     var Name = $('#fname').val();
     var Email = $('#email').val();
@@ -41,3 +40,4 @@ function calctotalPrice(e) {
         var location = $("input#location").val();
         console.log(totalPrice);
         alert("Hello " + name + ". Thank you for chosing KFMP Cleaners Ltd. Your request of " + getNumber() + " Cleaner(s) has been processed successfully and  we will be sending cleaner(s) to " +  location +  " . " + "Your total amount payable is "  + totalPrice + ". We will call you shortly on " + number);
+}

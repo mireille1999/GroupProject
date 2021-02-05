@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+  }
 #main-contact{
     background-image: url("../Images/photo-1582735689369-4fe89db7114c.jpeg");
     background-size: cover;
