@@ -6,20 +6,19 @@
     top: 0;
     font-size: 20px;
     padding-left: 450px;
-    padding-bottom: 30px;
+    
    
   }
   .navbar a {
     float: left;
     display: block;
     color: white;
-    text-align: center;
-    padding-left: 200px;
+    text-align:center;
+    padding-left: 20px;
     padding-right: 90px;
     text-decoration: none;
-    padding-top: 20px;
+    padding-top: 12px;
     padding-bottom: 15px;
-  
     
   }
   .navbar a:hover {

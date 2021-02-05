@@ -10,23 +10,20 @@
   background-color: #333;
   position: sticky;
   position: -webkit-sticky;
-  top: 0;
   font-size: 20px;
-  padding-left: 450px;
   padding-bottom: 15px;
-  padding-top: px;
-  
- 
+  padding-left: 450px;
 }
 .navbar a {
   float: left;
-  display: block;
-  color: white;
-  text-align:center;
-  padding-left: 20px;
-  padding-right: 170px;
-  text-decoration: none;
-  padding-top: 20px;
+    display:block;
+    color: white;
+    text-align:center;
+    padding-left: 20px;
+    padding-right: 90px;
+    text-decoration: none;
+    padding-top: 20px;
+
   
 }
 .navbar a:hover {
