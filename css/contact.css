@@ -1,5 +1,8 @@
-body{
-    background-image: url("/home/kevine/Documents/GroupProject/Images/photo-1582735689369-4fe89db7114c.jpeg");
+body {
+    margin: 0;
+  }
+#main-contact{
+    background-image: url("../Images/photo-1582735689369-4fe89db7114c.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -11,6 +14,7 @@ body{
     top: 0;
     font-size: 20px;
     padding-left: 450px;
+    padding-bottom: 30px;
    
   }
   .navbar a {
@@ -21,6 +25,7 @@ body{
     padding-left: 20px;
     padding-right: 90px;
     text-decoration: none;
+    padding-top: 20px;
     
   }
   .navbar a:hover {
@@ -47,7 +52,7 @@ input[type=text]{
     background-color: white;
     width: 500px;
     height: 40px;
-    margin-left:510px;
+    margin-left:15px;
 
     color: black;
 
@@ -64,7 +69,7 @@ textarea[type=text] {
     background-color: white;
     width: 500px;
     height: 280px;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-top: 30px;
     color: black;
  
